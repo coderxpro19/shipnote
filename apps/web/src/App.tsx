@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import type { Session } from '@supabase/supabase-js'
 import { supabase } from './lib/supabase'
+import Projects from './Projects'
 
 export default function App() {
   const [session, setSession] = useState<Session | null>(null)
@@ -48,7 +49,7 @@ export default function App() {
             style={{ borderRadius: '50%' }}
           />
           <br />
-          <button onClick={signOut}>Sign out</button>
+          <button onClick={signOut}>Sign out</button>   <Projects session={session} />
         </>
       ) : (
         <button onClick={signInWithGitHub}>Sign in with GitHub</button>
