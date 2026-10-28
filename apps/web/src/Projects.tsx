@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import type { Session } from '@supabase/supabase-js'
 import { supabase } from './lib/supabase'
+import MergedPRs from './MergedPRs'
 
 type Repo = { id: number; name: string; full_name: string; description: string | null; fork: boolean }
 type Project = { id: string; name: string; github_repo: string }
@@ -62,7 +63,10 @@ export default function Projects({ session }: { session: Session }) {
       ) : (
         <ul>
           {projects.map((p) => (
-            <li key={p.id}>{p.github_repo}</li>
+               <li key={p.id}>
+               <strong>{p.github_repo}</strong>
+               <MergedPRs repo={p.github_repo} />
+             </li>
           ))}
         </ul>
       )}
