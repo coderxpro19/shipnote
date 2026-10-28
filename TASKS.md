@@ -15,8 +15,8 @@ Rule: one small commit per task. Push to GitHub every day, even if it's tiny.
 
 - [x] Scaffold `apps/web` with Vite + React + TypeScript
 - [x] Scaffold `apps/worker` with Hono on Cloudflare Workers (`wrangler`)
-- [ ] Turn on GitHub as a login provider in Supabase Auth
-- [ ] Login and logout in the web app
+- [x] Turn on GitHub as a login provider in Supabase Auth
+- [x] Login and logout in the web app
 - [x] Run `supabase/migrations/0001_init.sql` in your Supabase project
 - [ ] Worker endpoint: list the user's GitHub repos
 - [ ] Let the user "add a project" (saves a row in `projects`)
