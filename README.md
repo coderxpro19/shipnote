@@ -45,7 +45,26 @@ shipnote/
 
 ## Getting started
 
-Setup steps will be added as each part is built. See [TASKS.md](./TASKS.md) for the current plan.
+You need Node.js 20 or newer, a Supabase project, and a GitHub OAuth app.
+
+1. Clone the repo and install the web app:
+   ```
+   cd apps/web
+   npm install
+   ```
+2. Create `apps/web/.env` with your Supabase values:
+   ```
+   VITE_SUPABASE_URL=...
+   VITE_SUPABASE_ANON_KEY=...
+   ```
+3. Run the schema in `supabase/migrations/0001_init.sql` in the Supabase SQL editor.
+4. Enable the GitHub provider in Supabase Auth.
+5. Start the app:
+   ```
+   npm run dev
+   ```
+
+See [TASKS.md](./TASKS.md) for the current plan.
 
 ## Roadmap
 
