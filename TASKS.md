@@ -4,20 +4,20 @@ Rule: one small commit per task. Push to GitHub every day, even if it's tiny.
 
 ## Phase 0: Tonight (setup)
 
-- [ ] Create a new GitHub repo named `shipnote` (empty, no README)
-- [ ] Copy these files into a folder, run `git init`, make the first commit
-- [ ] Push to GitHub (`git remote add origin ...`, `git push -u origin main`)
-- [ ] Open the folder in Cursor
-- [ ] Create a Supabase project (free tier) and note the URL and keys
-- [ ] Copy `.env.example` to `.env` (never commit `.env`)
+- [x] Create a new GitHub repo named `shipnote` (empty, no README)
+- [x] Copy these files into a folder, run `git init`, make the first commit
+- [x] Push to GitHub (`git remote add origin ...`, `git push -u origin main`)
+- [x] Open the folder in Cursor
+- [x] Create a Supabase project (free tier) and note the URL and keys
+- [x] Copy `.env.example` to `.env` (never commit `.env`)
 
 ## Phase 1 (Week 1): GitHub login and reading PRs
 
-- [ ] Scaffold `apps/web` with Vite + React + TypeScript
-- [ ] Scaffold `apps/worker` with Hono on Cloudflare Workers (`wrangler`)
+- [x] Scaffold `apps/web` with Vite + React + TypeScript
+- [x] Scaffold `apps/worker` with Hono on Cloudflare Workers (`wrangler`)
 - [ ] Turn on GitHub as a login provider in Supabase Auth
 - [ ] Login and logout in the web app
-- [ ] Run `supabase/migrations/0001_init.sql` in your Supabase project
+- [x] Run `supabase/migrations/0001_init.sql` in your Supabase project
 - [ ] Worker endpoint: list the user's GitHub repos
 - [ ] Let the user "add a project" (saves a row in `projects`)
 - [ ] Worker endpoint: fetch merged PRs since the last release
