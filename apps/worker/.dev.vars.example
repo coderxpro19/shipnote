@@ -1,0 +1,21 @@
+# Copy to .dev.vars (same folder) and fill in. NEVER commit .dev.vars
+SUPABASE_URL=
+SUPABASE_ANON_KEY=
+# The Supabase SECRET key (sb_secret_...). Server-side only, never in the web app.
+SUPABASE_SERVICE_ROLE_KEY=
+
+GEMINI_API_KEY=
+GEMINI_MODEL=
+
+RESEND_API_KEY=
+# For testing use onboarding@resend.dev (Resend only delivers to your own account email until you verify a domain)
+RESEND_FROM_EMAIL=onboarding@resend.dev
+
+# Public addresses of the worker and the web app (used in email links)
+WORKER_URL=http://127.0.0.1:8787
+WEB_URL=http://localhost:5173
+
+# Any long random string; use the same value in the GitHub webhook settings
+GITHUB_WEBHOOK_SECRET=
+# Optional: a GitHub token (no scopes needed) to raise the API rate limit
+# GITHUB_TOKEN=
